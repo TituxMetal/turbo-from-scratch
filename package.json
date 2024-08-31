@@ -1,5 +1,6 @@
 {
-  "name": "20240831-turbo-from-scratch",
+  "name": "turbo-from-scratch",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "build": "turbo build",
@@ -8,9 +9,9 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "prettier": "^3.2.5",
+    "prettier": "^3.3.3",
     "turbo": "^2.1.1",
-    "typescript": "^5.4.5"
+    "typescript": "~5.3.3"
   },
   "engines": {
     "node": ">=18"
