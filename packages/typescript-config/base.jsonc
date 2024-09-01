@@ -16,8 +16,8 @@
     "noUncheckedIndexedAccess": true,
 
     /* If transpiling with tsc: */
-    "module": "Preserve",
-    // "module": "esnext",
+    // "module": "Preserve",
+    "module": "ESNext",
 
     /* AND if you're building for a library: */
     "declaration": true,
@@ -42,7 +42,7 @@
     "forceConsistentCasingInFileNames": true,
     "incremental": true,
     "inlineSources": false,
-    "moduleResolution": "Bundler",
+    // "moduleResolution": "Bundler",
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "preserveWatchOutput": true,
