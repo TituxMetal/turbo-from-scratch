@@ -1,5 +1,8 @@
 {
-  "name": "remix-app-base",
+  "author": "",
+  "description": "",
+  "name": "remix-app",
+  "license": "MIT",
   "private": true,
   "sideEffects": false,
   "type": "module",
