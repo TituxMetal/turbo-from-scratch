@@ -15,7 +15,7 @@
     "start:docker": "run-s docker:*",
     "docker:build": "docker build -t remix-hono-vite .",
     "docker:run": "docker run --rm -d -p 8080:8080 --env-file .env remix-hono-vite",
-    "typecheck": "tsc"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@hono/node-server": "^1.8.2",
@@ -30,6 +30,8 @@
   "devDependencies": {
     "@hono/vite-dev-server": "^0.10.0",
     "@remix-run/dev": "^2.8.1",
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
     "@types/react": "^18.2.64",
     "@types/react-dom": "^18.2.21",
     "@typescript-eslint/eslint-plugin": "^7.1.1",
