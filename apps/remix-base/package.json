@@ -13,7 +13,7 @@
     "dev": "node ./server.js",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "remix-serve ./build/server/index.js",
-    "typecheck": "tsc"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@remix-run/node": "^2.11.2",
@@ -25,6 +25,8 @@
   },
   "devDependencies": {
     "@remix-run/dev": "^2.11.2",
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
     "@types/react": "^18.3.4",
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^6.7.4",
