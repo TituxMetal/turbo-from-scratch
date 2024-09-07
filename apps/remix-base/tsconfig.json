@@ -1,6 +1,18 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "extends": "@repo/typescript-config/remix.json",
+  "include": [
+    ".eslintrc.cjs",
+    "postcss.config.cjs",
+    "server.js",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/.server/**/*.ts",
+    "**/.server/**/*.tsx",
+    "**/.client/**/*.ts",
+    "**/.client/**/*.tsx",
+    "build/server/index.js"
+  ],
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
