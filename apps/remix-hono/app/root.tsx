@@ -1,32 +1,29 @@
-import {
-  Links,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
-} from "@remix-run/react";
-import { LinksFunction } from "@remix-run/node";
-import styles from "~/tailwind.css?url";
+import { type LinksFunction } from '@remix-run/node'
+import { Links, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react'
 
-export const links: LinksFunction = () => [{ rel: "stylesheet", href: styles }];
+import styles from '~/tailwind.css?url'
 
-export default function App() {
+export const links: LinksFunction = () => [{ rel: 'stylesheet', href: styles }]
+
+const App = () => {
   return (
-    <html lang="en" className="h-dvh bg-zinc-900 w-screen text-zinc-50">
+    <html lang='en' className='h-dvh w-screen bg-zinc-900 text-zinc-50'>
       <head>
-        <meta charSet="utf-8" />
+        <meta charSet='utf-8' />
         <meta
-          name="viewport"
-          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,viewport-fit=cover"
+          name='viewport'
+          content='width=device-width,initial-scale=1.0,maximum-scale=1.0,viewport-fit=cover'
         />
         <Meta />
         <Links />
       </head>
-      <body className="size-full">
+      <body className='size-full'>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
       </body>
     </html>
-  );
+  )
 }
+
+export default App
