@@ -9,6 +9,8 @@ export const meta: MetaFunction = () => [
 ]
 
 const Index = () => {
+  console.log('Hello World from Remix Vite')
+
   return (
     <Layout>
       <h1 className='text-5xl font-bold text-orange-500'>Welcome to Remix App</h1>

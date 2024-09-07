@@ -22,5 +22,5 @@ const build = viteDevServer
 app.all('*', createRequestHandler({ build }))
 
 app.listen(3000, () => {
-  console.log('App listening on http://localhost:3000', { isProduction })
+  console.log('Remix Base App is listening on http://localhost:3000', { isProduction })
 })
