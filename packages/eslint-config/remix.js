@@ -29,6 +29,8 @@ module.exports = {
   },
   ignorePatterns: ['node_modules/', 'build/', '.eslintrc.cjs', '**/*.css'],
   rules: {
+    semi: ['error', 'never'],
+    quotes: ['error', 'single'],
     'no-console': 'off',
     '@typescript-eslint/no-shadow': 'off',
     'import/no-default-export': 'off',
