@@ -9,7 +9,7 @@
   "version": "0.0.0",
   "scripts": {
     "build": "remix vite:build",
-    "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
+    "no-lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
     "no-dev": "remix vite:dev",
     "no-start": "remix-serve ./build/server/index.js",
     "no-start:docker": "run-s docker:*",
