@@ -9,12 +9,13 @@ export const meta: MetaFunction = () => [
 ]
 
 const Index = () => {
+  // eslint-disable-next-line no-console -- Example of console.log
   console.log('Hello World from Remix Vite')
 
   return (
     <Layout>
       <h1 className='text-5xl font-bold text-orange-500'>Welcome to Remix App</h1>
-      <p className='text-pink-400'>Hello World!</p>
+      <p className='text-pink-400'>Hellooooooooo World!</p>
       <Button>
         Go to{' '}
         <Link to='about' className='font-bold'>
