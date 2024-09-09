@@ -1,12 +1,17 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "@repo/typescript-config/nestjs.json",
-  "include": ["src/**/*.ts", "test/**.e2e-spec.ts", ".eslintrc.js"],
+  "extends": "@repo/typescript-config/base.json",
   "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "outDir": "./dist",
+    "rootDir": "./src",
     "baseUrl": "./",
     "paths": {
       "~/*": ["src/*"]
-    }
-  }
+    },
+    "noEmit": false,
+    "lib": ["DOM", "ES2022"]
+  },
+  "include": ["./src/**/*"]
 }

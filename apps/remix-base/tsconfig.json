@@ -1,22 +1,28 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "@repo/typescript-config/remix.json",
+  "extends": "@repo/typescript-config/base.json",
   "include": [
-    ".eslintrc.cjs",
-    "postcss.config.cjs",
-    "server.js",
-    "**/*.ts",
-    "**/*.tsx",
-    "**/.server/**/*.ts",
-    "**/.server/**/*.tsx",
-    "**/.client/**/*.ts",
-    "**/.client/**/*.tsx",
-    "build/server/index.js"
+    "./*.d.ts",
+    "./app/**/*",
+    "./eslintrc.cjs",
+    "./vite.config.ts",
+    "./postcss.config.cjs",
+    "./tailwind.config.ts"
   ],
   "compilerOptions": {
-    "baseUrl": "./",
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "noImplicitAny": false,
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "baseUrl": ".",
     "paths": {
-      "~/*": ["app/*"]
-    }
+      "~/*": ["./app/*"]
+    },
+    "noEmit": true
   }
 }
