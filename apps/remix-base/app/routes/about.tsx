@@ -1,10 +1,10 @@
 import { Link } from '@remix-run/react'
 
-import { Button, Layout } from '~/components'
+import { Button } from '~/components'
 
 const AboutRoute = () => {
   return (
-    <Layout>
+    <>
       <h1 className='text-5xl font-bold text-blue-500'>About Page</h1>
       <p className='text-2xl text-red-400'>This is the abouts page</p>
       <Button>
@@ -19,7 +19,7 @@ const AboutRoute = () => {
           Api Route
         </a>
       </Button>
-    </Layout>
+    </>
   )
 }
 
