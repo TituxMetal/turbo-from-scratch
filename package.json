@@ -4,16 +4,17 @@
   "private": true,
   "scripts": {
     "build": "turbo build",
+    "clean-node-modules": "rm -rf {node_modules,*.lock} **/**/{node_modules,*.lock}",
+    "clean-turbo-cache": "rm -rf .turbo **/**/.turbo",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "start": "turbo start",
     "typecheck": "turbo typecheck"
   },
   "devDependencies": {
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.6",
-    "turbo": "^2.1.1",
-    "typescript": "~5.3.3"
+    "turbo": "^2.1.1"
   },
   "engines": {
     "node": ">=20.0.0"
