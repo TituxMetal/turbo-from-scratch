@@ -9,9 +9,19 @@
     "dev": "turbo dev",
     "lint": "turbo lint",
     "start": "turbo start",
-    "typecheck": "turbo typecheck"
+    "typecheck": "turbo typecheck",
+    "prepare": "husky",
+    "lint-staged": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{cjs,md,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix ."
+    ]
   },
   "devDependencies": {
+    "husky": "^9.1.5",
+    "lint-staged": "^15.2.10",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.6",
     "turbo": "^2.1.1"
