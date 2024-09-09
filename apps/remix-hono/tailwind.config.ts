@@ -1,9 +1,14 @@
-import type { Config } from "tailwindcss";
+import path from 'node:path'
+
+import { type Config } from 'tailwindcss'
+import colors from 'tailwindcss/colors'
 
 export default {
-  content: ["./app/**/*.{js,jsx,ts,tsx}"],
+  content: [path.join(__dirname, './app/**/*.{ts,tsx}')],
   theme: {
-    extend: {},
+    extend: {
+      colors: { gray: colors.neutral }
+    }
   },
-  plugins: [],
-} satisfies Config;
+  plugins: []
+} satisfies Config
