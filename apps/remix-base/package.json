@@ -9,11 +9,10 @@
   "version": "0.0.0",
   "scripts": {
     "build": "remix vite:build",
-    "dev-old": "remix vite:dev",
-    "dev": "node ./server.js",
     "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
+    "dev": "remix vite:dev",
     "start": "remix-serve ./build/server/index.js",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc"
   },
   "dependencies": {
     "@remix-run/express": "^2.11.2",
@@ -22,7 +21,8 @@
     "@remix-run/serve": "^2.11.2",
     "isbot": "^4.1.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "remix-flat-routes": "^0.6.5"
   },
   "devDependencies": {
     "@remix-run/dev": "^2.11.2",
@@ -32,7 +32,6 @@
     "@types/react": "^18.3.4",
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.20",
-    "eslint": "^8.57.0",
     "postcss": "^8.4.41",
     "tailwindcss": "^3.4.10",
     "typescript": "~5.3.3",
