@@ -1,24 +1,23 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "ui": "stream",
+  "globalEnv": ["NODE_ENV", "PORT", "SESSION_SECRET"],
   "tasks": {
     "build": {
-      "dependsOn": ["^build"],
-      "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "outputs": ["apps/**/dist/**", "apps/**/build/**"],
+      "dependsOn": ["^build"]
     },
-    "lint": {
-      "dependsOn": ["^lint"]
-    },
-    "transit": {
-      "dependsOn": ["^transit"]
-    },
-    "typecheck": {
-      "dependsOn": ["transit"]
+    "start": {
+      "dependsOn": ["^start", "build"]
     },
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "typecheck": {
+      "cache": true
+    },
+    "lint": {
+      "cache": true
     }
   }
 }
