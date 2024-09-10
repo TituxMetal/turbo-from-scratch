@@ -6,7 +6,7 @@ const AboutRoute = () => {
   return (
     <>
       <h1 className='text-5xl font-bold text-blue-500'>About Page</h1>
-      <p className='text-2xl text-red-400'>This is the abouts page</p>
+      <p className='text-2xl text-red-400'>This is the about page</p>
       <Button>
         Go to{' '}
         <Link to='/' className='font-bold'>
@@ -15,8 +15,8 @@ const AboutRoute = () => {
       </Button>
       <Button>
         Go to{' '}
-        <a href='/api/hello' className='font-bold'>
-          Api Route
+        <a href='/nest' className='font-bold'>
+          Nest Route
         </a>
       </Button>
     </>
