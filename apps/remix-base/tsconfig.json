@@ -2,11 +2,12 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "extends": "@repo/typescript-config/base.json",
   "include": [
-    "./*.d.ts",
+    "./types/**.ts",
     "./app/**/*",
     "./eslintrc.cjs",
+    "./index.d.cts",
+    "./index.cjs",
     "./vite.config.ts",
-    "./postcss.config.cjs",
     "./tailwind.config.ts"
   ],
   "compilerOptions": {
